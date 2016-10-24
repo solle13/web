@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>Tienda online</title>
+     <meta charset="utf-8">
+     <link rel="icon" href="images/favicon.ico">
+     <link rel="shortcut icon" href="images/favicon.ico" />
+     <link rel="stylesheet" href="css/form.css">
+     <link rel="stylesheet" href="css/style.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+     <script>
+        $(document).ready(function(){
+
+          $().UItoTop({ easingType: 'easeOutQuart' });
+        }) 
+     </script>
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+    <![endif]-->
+    <!--[if lt IE 10]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie1.css">
+    <![endif]-->
+    
+     </head>
+     <body  class="">
+
+<!--==============================header=================================-->
+ <header> 
+  <div class="container_12">
+   <div class="grid_12"> 
+    <div class="socials">
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"> </a>
+      <a href="#" class="last"></a>
+    </div>
+    <div id ="logo_nombre"><a href="index.html">Mojarras el Buki</a></div>
+    <div class="menu_block">
+
+
+    <nav id="bt-menu" class="bt-menu">
+        <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+        <ul>
+          <li class="bt-icon "><a href="index.html">Home</a></li>
+         <li class="bt-icon"><a href="index-1.html">Info</a></li>
+         <li class="bt-icon"><a href="index-2.html">Menu</a></li>
+         <li class="current bt-icon"><a href="index-4.html">Tienda</a></li>
+         <li class="bt-icon"><a href="index-5.html">Contacto</a></li>
+         <li class="bt-icon"><a href="/sushi/site/php/index-3.php">Almacen</a></li>
+        </ul>
+      </nav>
+    
+ <div class="clear"></div>
+</div>
+<div class="clear"></div>
+          </div>
+      </div>
+</header>
+
+<!--==============================Content=================================-->
+
+<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - December 02, 2013!</div>
+  <div class="container_12">
+    <div class="grid_8">
+      <h3>Ház tu pedido</h3>
+      <h3>Regístrate</h3>
+      <form id="form" action="/sushi/site/php/Registrar.php" method="post">
+                              
+        <!--<div class="success_wrapper">
+        <div class="success-message">Hecho</div>
+        </div>-->
+        <label class="Nombre">
+        <input type="text" placeholder="Nombre" data-constraints="@Required @JustLetters" name="Nombre"/>
+        <span class="empty-message">*Campo necesario.</span>
+        <span class="error-message">*Nombre inválido.</span>
+        </label>
+        <label class="Apellido1">
+        <input type="text" placeholder="1° Apellido" data-constraints="@Required @JustLetters" name="Apellido1"/>
+        <span class="empty-message">*Campo necesario.</span>
+        <span class="error-message">*nombre inválido.</span>
+        </label>
+            
+        <label class="Apellido2">
+        <input type="text" placeholder="2° Apellido" data-constraints="@Required @JustLetters" name="Apellido2"/>
+        <span class="empty-message">*Campo necesario.</span>
+        <span class="error-message">*Nombre inválido.</span>
+        </label>
+        <br>
+        <label class="Usuario">
+        <input type="text" placeholder="Usuario" data-constraints="@Required @JustLetters" name="Usuario"/>
+        <span class="empty-message">*Campo necesario.</span>
+        <span class="error-message">*Nombre inválido.</span>
+        </label>
+        <br>
+        <label class="Pass">
+        <input type="password" placeholder="Pass"  name="Pass"/>
+        <span class="empty-message">*Campo necesario.</span>
+        </label>
+        <label class="Pass2">
+        <input type="password" placeholder="Pass2"  name="Pass2"/>
+        <span class="empty-message">*Campo necesario.</span>
+        </label>
+        <br>
+        <label class="Estado">
+            <input type="text" placeholder="Estado" data-constraints="@Required @JustLetters" name="Estado"/>
+            <span class="empty-message">*Campo necesario.</span>
+            <span class="error-message">*Nombre inválido.</span>
+            </label>
+
+        <label class="Correo">
+        <input type="text" placeholder="Correo" data-constraints="@Required @Email" name="Correo"/>
+        <span class="empty-message">*Campo necesario.</span>
+         <span class="error-message">*e-mail inválido.</span>
+         </label>
+          
+        
+        
+        <input type="submit" value="Registrar" ></input> 
+
+        
+      </form>   
+    </div>
+    <div class="grid_4">
+    <h3>Ingresa</h3>
+      <form id="form" action="/sushi/site/php/ValidarEntrar.php" method="post">
+                              
+        <!--<div class="success_wrapper">
+        <div class="success-message">Hecho</div>
+        </div>-->
+        <label class="Usuario">
+        <input type="text" placeholder="Usuario" data-constraints="@Required @JustLetters" name="Usuario"/>
+        <span class="empty-message">*Campo necesario.</span>
+        <span class="error-message">*Nombre inválido.</span>
+        </label><br>
+        <label class="Pass">
+        <input type="password" placeholder="Pass" data-constraints="@Required @JustLetters" name="Pass"/>
+        <span class="empty-message">*Campo necesario.</span>
+        <span class="error-message">*nombre inválido.</span>
+        </label>
+
+        
+        <input type="submit" value="Entrar" ></input> 
+
+        
+      </form>   
+    </div>
+
+<!--==============================footer=================================-->
+
+<footer>    
+  <div class="container_12">
+    <div class="grid_6 prefix_3">
+      <a href="index.html" class="f_logo"><div id ="logo_nombre">Mojarras el Buki</div></a>
+      <div class="copy">
+      &copy; 2013 | <a href="#">Privacy Policy</a> <br> Website   designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+       <script>
+      $(document).ready(function(){ 
+         $(".bt-menu-trigger").toggle( 
+          function(){
+            $('.bt-menu').addClass('bt-menu-open'); 
+          }, 
+          function(){
+            $('.bt-menu').removeClass('bt-menu-open'); 
+          } 
+        ); 
+      }) 
+    </script>
+</body>
+
+</html>
